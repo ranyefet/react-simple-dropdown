@@ -3,7 +3,8 @@ import React, { createClass, PropTypes } from 'react';
 const DropdownContent = createClass({
   propTypes: {
     children: PropTypes.any,
-    className: PropTypes.string
+    className: PropTypes.string,
+    caretStyle: PropTypes.any,
   },
   getDefaultProps: function(){
     return {
