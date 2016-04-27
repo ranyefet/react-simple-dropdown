@@ -10,3 +10,27 @@
 .dropdown--active .dropdown__content {
     display: block;
 }
+
+.dropdown__caret {
+    position: relative;
+    top: -9px;
+}
+
+.dropdown__caret:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 9px solid rgba(0,0,0,.18);
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+}
+.dropdown__caret:after {
+  content: '';
+  position: absolute;
+  top: 1;
+  left: 1;
+  border-bottom: 8px solid #fff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}

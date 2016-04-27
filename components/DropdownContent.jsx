@@ -11,13 +11,14 @@ const DropdownContent = createClass({
     }
   },
   render: function(){
-    const { children, className } = this.props;
+    const { children, className, caretStyle } = this.props;
     const classes = 'dropdown__content ' + className;
     return (
       <div
         style={this.props.style}
         className={classes}
       >
+        <div className="dropdown__caret" style={caretStyle}></div>
         {children}
       </div>
     )
